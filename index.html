@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pappu Alawa's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header   -->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-800">Pappu Alawa</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+        <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+        <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+        <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden bg-white shadow-md hidden">
+      <a href="#home" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Home</a>
+      <a href="#about" class="block px-4 py-2 text-gray-600 hover:text-gray-900">About</a>
+      <a href="#projects" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Projects</a>
+      <a href="#contact" class="block px-4 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+    </div>
+  </header>
+
+  <!-- main section start -->
+  <main class="px-5">
+
+    <!-- hero section  -->
+    <section id="home" class="bg-blue-900 text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="md:flex md:items-center md:justify-between">
+          <!-- Left Column -->
+          <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg leading-relaxed mb-6">I'm Pappu Alawa, a passionate Software Developer.</p>
+            <a href="#contact"
+              class="bg-white text-blue-900 hover:bg-blue-800 hover:text-white py-2 px-4 rounded-lg text-sm font-semibold">Contact
+              Me</a>
+          </div>
+
+          <!-- Right Column (Optional Image) -->
+          <div class="md:w-1/2">
+            <img
+              src="https://media.licdn.com/dms/image/D5603AQGFk70jB_z39g/profile-displayphoto-shrink_800_800/0/1705659578462?e=1726704000&v=beta&t=Jpdk4oeOLMMMF1Us_4amBZBnS6Mw5iAL8HOKs13vj4Q"
+              alt="Hero Image" class="rounded-lg shadow-lg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">About Me</h2>
+        <div class="relative rounded-lg overflow-hidden shadow-lg">
+          <div class="bg-cover bg-center h-80" style="background-image: url('assets/about.jpg')">
+            <div
+              class="bg-gray-800 bg-opacity-50 h-full flex flex-col justify-center items-center text-center text-white py-6 px-4">
+              <p class="text-xl font-bold">Hello! I'm <span class="text-2xl">Pappu Alawa</span>, a passionate <span
+                  class="text-2xl">Software Developer</span> at ETV Bharat.</p>
+
+
+              <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Programming Skills</h2>
+
+                <!-- Skill Cards -->
+                <div class="hidden md:block">
+
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <!-- JavaScript -->
+                    <div class="bg-white bg-opacity-50 rounded-lg shadow-lg p-4 flex flex-col items-center">
+                      <!-- <img src="assets/car_icon.png" alt="Car Icon" class="h-6 w-6 mb-2"> -->
+                      <span class="text-white font-semibold text-center">JavaScript</span>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="bg-white bg-opacity-50 rounded-lg shadow-lg p-4 flex flex-col items-center">
+                      <!-- <img src="assets/car_icon.png" alt="Car Icon" class="h-6 w-6 mb-2"> -->
+                      <span class="text-white font-semibold text-center">PHP</span>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="bg-white bg-opacity-50 rounded-lg shadow-lg p-4 flex flex-col items-center">
+                      <!-- <img src="assets/car_icon.png" alt="Car Icon" class="h-6 w-6 mb-2"> -->
+                      <span class="text-white font-semibold text-center">Python</span>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="bg-white bg-opacity-50 rounded-lg shadow-lg p-4 flex flex-col items-center">
+                      <!-- <img src="assets/car_icon.png" alt="Car Icon" class="h-6 w-6 mb-2"> -->
+                      <span class="text-white font-semibold text-center">SQL</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <div class="mt-6">
+            <a href="https://alawa3282.hackerresume.io/9a971403-fab6-44f3-a505-211668747505" target="_blank"
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-semibold">Download
+              Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certificate Section -->
+
+    <section id="certificates" class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Certificates</h2>
+
+        <!-- Certificate Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Certificate Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="https://www.hackerrank.com/certificates/5711b5d013f4" target="_blank" rel="noopener noreferrer">
+              <img src="assets/frontend_developer_react certificate.png" alt="Frontend Developer React Certificate"
+                class="w-full h-48 object-cover object-center">
+            </a>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Frontend Developer React Certificate</h3>
+              <p class="text-sm text-gray-700 leading-relaxed">Certificate for proficiency in frontend development with
+                React.</p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="https://www.hackerrank.com/certificates/40c20133bbff" target="_blank" rel="noopener noreferrer">
+              <img src="assets/javascript_intermediate certificate.png" alt="JavaScript Intermediate Certificate"
+                class="w-full h-48 object-cover object-center">
+            </a>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">JavaScript Intermediate Certificate</h3>
+              <p class="text-sm text-gray-700 leading-relaxed">Certificate for intermediate proficiency in JavaScript.
+              </p>
+            </div>
+          </div>
+
+          <!-- Certificate Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <a href="https://www.hackerrank.com/certificates/0945399f4251" target="_blank" rel="noopener noreferrer">
+              <img src="assets/rest_api_intermediate certificate.png" alt="Frontend Developer React Certificate (2)"
+                class="w-full h-48 object-cover object-center">
+            </a>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-gray-800 mb-2">Rest API Intermediate Certificate </h3>
+              <p class="text-sm text-gray-700 leading-relaxed">Certificate for intermediate proficiency in Rest API.</p>
+            </div>
+          </div>
+
+          <!-- Add more certificate cards as needed -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="project1_image.jpg" alt="Project 1" class="w-full h-64 object-cover object-center">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Project 1 Name</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">Description of Project 1.</p>
+              <a href="#"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-semibold inline-block">View
+                Project</a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="project2_image.jpg" alt="Project 2" class="w-full h-64 object-cover object-center">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Project 2 Name</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">Description of Project 2.</p>
+              <a href="#"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-semibold inline-block">View
+                Project</a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="project3_image.jpg" alt="Project 3" class="w-full h-64 object-cover object-center">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Project 3 Name</h3>
+              <p class="text-gray-700 leading-relaxed mb-4">Description of Project 3.</p>
+              <a href="#"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-semibold inline-block">View
+                Project</a>
+            </div>
+          </div>
+
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Me</h2>
+
+        <!-- Contact Links with Icons and Names Below -->
+        <div class="flex justify-center items-center space-x-4">
+          <a href="mailto:alawa3282@gmail.com" class="flex flex-col items-center text-blue-500 hover:underline">
+            <img src="assets/email.png" alt="Email Icon" class="h-10 w-10 mb-1">
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/alawa/" target="_blank" rel="noopener noreferrer"
+            class="flex flex-col items-center text-blue-500 hover:underline">
+            <img src="assets/linkdin.png" alt="LinkedIn Icon" class="h-10 w-10 mb-1">
+            LinkedIn
+          </a>
+          <a href="https://github.com/Anshualawa" target="_blank" rel="noopener noreferrer"
+            class="flex flex-col items-center text-blue-500 hover:underline">
+            <img src="assets/github.png" alt="GitHub Icon" class="h-10 w-13 mb-1">
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/i_am_alawa/" target="_blank" rel="noopener noreferrer"
+            class="flex flex-col items-center text-blue-500 hover:underline">
+            <img src="assets/instagram.png" alt="Instagram Icon" class="h-10 w-10 mb-1">
+            Instagram
+          </a>
+        </div>
+
+
+
+        <!-- Contact Form -->
+        <div class="max-w-md mx-auto mt-8 bg-white shadow-lg rounded-lg overflow-hidden">
+          <form id="contactForm" class="p-4">
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+              <input type="text" id="name" name="name"
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 border">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
+              <input type="email" id="email" name="email"
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 border">
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="message" name="message" rows="4"
+                class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 border"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm font-semibold">Send
+                Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="bg-white shadow py-4">
+    <div class="container mx-auto text-center">
+      &copy; 2024 Pappu Alawa. All rights reserved.
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
