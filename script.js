@@ -13,6 +13,8 @@ $(document).ready(function() {
         message: $('#message').val()
       };
 
+      console.log(formData);
+      
       // AJAX POST request to SheetDB API
       $.ajax({
         url: 'https://sheetdb.io/api/v1/jys61ogopc8zx',
